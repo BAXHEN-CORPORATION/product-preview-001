@@ -2,11 +2,11 @@
 
 <!---Esses são exemplos. Veja https://shields.io para outras pessoas ou para personalizar este conjunto de escudos. Você pode querer incluir dependências, status do projeto e informações de licença aqui--->
 
-![GitHub repo size](https://img.shields.io/github/repo-size/iuricode/README-template?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/iuricode/README-template?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/iuricode/README-template?style=for-the-badge)
-![Bitbucket open issues](https://img.shields.io/bitbucket/issues/iuricode/README-template?style=for-the-badge)
-![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/iuricode/README-template?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/languages/code-size/BAXHEN-CORPORATION/material-ui-v5-react-template?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/BAXHEN-CORPORATION/material-ui-v5-react-template?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/BAXHEN-CORPORATION/material-ui-v5-react-template?style=for-the-badge)
+![Bitbucket open issues](https://img.shields.io/bitbucket/issues/BAXHEN-CORPORATION/material-ui-v5-react-template?style=for-the-badge)
+![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/BAXHEN-CORPORATION/material-ui-v5-react-template?style=for-the-badge)
 
 <img src="https://camo.githubusercontent.com/306dedb9426f1d93a981d305a0a18164932ece8dca4d5fd820b1d3c36625b218/68747470733a2f2f6d75692e636f6d2f7374617469632f6c6f676f2e737667" alt="exemplo imagem">
 
@@ -18,7 +18,7 @@
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 - Você instalou a versão mais recente de `NodeJs / NPM`
-- Você tem uma máquina `<Windows / Linux / Mac>`.
+- Você tem uma máquina `Windows / Linux / Mac`.
 
 ## 🚀 Instalando Material UI v5 Emotion Engine
 
