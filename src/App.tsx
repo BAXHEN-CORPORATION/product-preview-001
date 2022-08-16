@@ -1,20 +1,28 @@
 import React from "react";
 
-import Container from "@mui/material/Container";
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
+import ProductCard from "./container/ProductCard";
+import Stack from "@mui/material/Stack";
 
-import Copyright from "./components/Copyright";
+import productImg from "./assets/product_image.png";
 
 export default function App() {
   return (
-    <Container maxWidth="sm">
-      <Box sx={{ my: 4 }}>
-        <Typography variant="h4" component="h1" gutterBottom>
-          Material UI v5 Template - Emotion Engine
-        </Typography>
-        <Copyright />
-      </Box>
-    </Container>
+    <Stack
+      minHeight="100vh"
+      width="100%"
+      bgcolor="common.cream"
+      alignItems="center"
+      justifyContent="center"
+      padding="2rem 1rem"
+    >
+      <ProductCard
+        category="PERFUME"
+        title="Gabrielle Essence Eau De Parfum"
+        description="A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL."
+        price={169.99}
+        discountPrice={149.99}
+        productUrl={productImg}
+      />
+    </Stack>
   );
 }
