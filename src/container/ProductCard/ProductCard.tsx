@@ -66,7 +66,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
         <Typography variant="display">{title}</Typography>
         <Typography variant="body">{description}</Typography>
 
-        <Stack>
+        <Stack direction="row" spacing="19px">
           <Typography variant="display" color="primary.main">
             ${discountPrice}
           </Typography>
