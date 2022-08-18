@@ -10,12 +10,35 @@ import CartIcon from "../../components/CartIcon";
 //** Local Imports */
 
 //** Typings */
+
+/**
+ * JSON representation of an {@link ProductCard}
+ * @see ProductCard
+ */
 export interface ProductCardProps {
+  /**
+   * Product's category
+   */
   category: string;
+  /**
+   * Product's name
+   */
   title: string;
+  /**
+   * Product's description
+   */
   description: string;
+  /**
+   * Product's full price
+   */
   price: number;
+  /**
+   * Product's discount price
+   */
   discountPrice: number;
+  /**
+   * Product's image url
+   */
   productUrl: string;
 }
 
@@ -24,14 +47,8 @@ const defaultProps: Partial<ProductCardProps> = {};
 
 /**
  * Container for displaying product info
- * @params category
- * @params title
- * @params description
- * @params price
- * @params discountPrice
- * @params productUrl
- *
- * @container
+ * @category Containers
+ * @component
  */
 const ProductCard: React.FC<ProductCardProps> = ({
   productUrl,

@@ -4,14 +4,19 @@ import React from "react";
 //** Local Imports */
 
 //** Typings */
+
+/**
+ * JSON representation of an {@link CardIcon}
+ * @see CardIcon
+ */
 export interface CardIconProps {}
 
 //** Default Props */
 const defaultProps: Partial<CardIconProps> = {};
 
 /**
- * Component for rendering a cart icon
- *
+ * Component for rendering a shopping cart icon
+ * @category Components
  * @component
  */
 const CardIcon: React.FC<CardIconProps> = () => {
