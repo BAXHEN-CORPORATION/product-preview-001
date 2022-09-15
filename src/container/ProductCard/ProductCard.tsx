@@ -1,15 +1,14 @@
 //** External Imports */
-import React from "react";
 
+import React from "react";
 import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import CartIcon from "../../components/CartIcon";
 
 //** Local Imports */
 
-//** Typings */
+import CartIcon from "../../components/CartIcon";
 
 /**
  * JSON representation of a {@link ProductCard}
@@ -32,41 +31,49 @@ export interface ProductCardProps {
   /**
    * Product's full price
    */
-  price: number;
+  fullPrice: number;
   /**
    * Product's discount price
    */
-  discountPrice: number;
+  price: number;
   /**
    * Product's image url
    */
-  productImageUrl: string;
+  productImageUrl?: string;
+  /**
+   * Product's action when the user clicks on add to cart button
+   */
+  onClick?: React.MouseEventHandler<HTMLButtonElement>;
 }
 
 //** Default Props */
-const defaultProps: Partial<ProductCardProps> = {};
+const defaultProps: Partial<ProductCardProps> = {
+  productImageUrl:
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png",
+};
 
 /**
+ * @container
  * Container for displaying product info
- * @category Containers
- * @component
  * @example
  *
  * const category = "PERFUME"
  * const title = "Gabrielle Essence Eau De Parfum"
  * const description = "A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL."
- * const price = 169.99
- * const discountPrice = 149.99
+ * const fullPrice = 169.99
+ * const price = 149.99
  * const productImageUrl = "https://cdn.pixabay.com/photo/2019/04/06/19/22/glass-4108085__340.jpg"
+ * const onClick = () => {}
  *
  * return (
  *   <ProductCard
  *    category={category}
  *    title={title}
  *    description={description}
+ *    fullPrice={fullPrice}
  *    price={price}
- *    discountPrice={discountPrice}
  *    productImageUrl={productImageUrl}
+ *    onClick={onClick}
  *  />
  * )
  *
@@ -76,8 +83,9 @@ const ProductCard: React.FC<ProductCardProps> = ({
   title,
   category,
   description,
+  fullPrice,
   price,
-  discountPrice,
+  onClick,
 }) => {
   return (
     <Stack
@@ -106,14 +114,14 @@ const ProductCard: React.FC<ProductCardProps> = ({
 
         <Stack direction="row" spacing="19px">
           <Typography variant="display" color="primary.main">
-            ${discountPrice}
+            ${price}
           </Typography>
           <Typography variant="body" component="del">
-            ${price}
+            ${fullPrice}
           </Typography>
         </Stack>
 
-        <Button variant="contained" startIcon={<CartIcon />}>
+        <Button onClick={onClick} variant="contained" startIcon={<CartIcon />}>
           Add to Cart
         </Button>
       </Stack>

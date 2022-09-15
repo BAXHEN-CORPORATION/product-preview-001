@@ -19,8 +19,8 @@ export default function App() {
         category="PERFUME"
         title="Gabrielle Essence Eau De Parfum"
         description="A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL."
-        price={169.99}
-        discountPrice={149.99}
+        fullPrice={169.99}
+        price={149.99}
         productImageUrl={productImg}
       />
     </Stack>
