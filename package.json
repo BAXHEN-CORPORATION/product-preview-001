@@ -1,6 +1,7 @@
 {
   "name": "product-preview-001",
   "version": "0.1.0",
+  "homepage": "https://baxhen-corporation.github.io/product-preview-001",
   "dependencies": {
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
@@ -24,11 +25,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "docs": "jsdoc -c jsdoc.json",
-    "open": "open-cli docs/index.html",
-    "gen-docs": "yarn docs && yarn open",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "deploy-storybook": "yarn build-storybook && gh-pages -d storybook-static"
   },
   "eslintConfig": {
     "extends": [
@@ -72,6 +71,7 @@
     "@storybook/testing-library": "^0.0.13",
     "@storybook/theming": "^6.5.12",
     "babel-plugin-named-exports-order": "^0.0.2",
+    "gh-pages": "^4.0.0",
     "prop-types": "^15.8.1",
     "webpack": "^5.74.0"
   }

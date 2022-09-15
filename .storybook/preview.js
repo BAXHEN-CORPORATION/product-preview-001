@@ -12,6 +12,12 @@ export const parameters = {
       date: /Date$/,
     },
   },
+  previewTabs: {
+    canvas: {
+      hidden: true,
+    },
+  },
+  viewMode: "docs",
 };
 
 addDecorator((story) => (
