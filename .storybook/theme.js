@@ -6,7 +6,7 @@ import logo from "../public/logo.png";
 export default create({
   ...themes.dark,
   brandTitle: "Baxhen",
-  brandUrl: "https://baxhen.io",
+  brandUrl: "https://classy-narwhal-e82e98.netlify.app/",
   brandImage: logo,
   brandTarget: "_self",
 });
