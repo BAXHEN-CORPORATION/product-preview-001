@@ -25,7 +25,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "docs": "jsdoc -c jsdoc.json",
-    "open-docs": "open-cli docs/index.html"
+    "open": "open-cli docs/index.html",
+    "gen-docs": "yarn docs && yarn open"
   },
   "eslintConfig": {
     "extends": [
@@ -45,9 +46,5 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "better-docs": "^2.7.2",
-    "jsdoc": "^3.6.11",
-    "open-cli": "^7.0.1"
-  }
+  "devDependencies": {}
 }

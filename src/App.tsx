@@ -21,7 +21,7 @@ export default function App() {
         description="A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL."
         price={169.99}
         discountPrice={149.99}
-        productUrl={productImg}
+        productImageUrl={productImg}
       />
     </Stack>
   );

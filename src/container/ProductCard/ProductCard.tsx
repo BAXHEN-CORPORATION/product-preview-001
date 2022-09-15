@@ -12,8 +12,9 @@ import CartIcon from "../../components/CartIcon";
 //** Typings */
 
 /**
- * JSON representation of an {@link ProductCard}
- * @see ProductCard
+ * JSON representation of a {@link ProductCard}
+ * @see ProductCard,
+ 
  */
 export interface ProductCardProps {
   /**
@@ -39,7 +40,7 @@ export interface ProductCardProps {
   /**
    * Product's image url
    */
-  productUrl: string;
+  productImageUrl: string;
 }
 
 //** Default Props */
@@ -49,9 +50,29 @@ const defaultProps: Partial<ProductCardProps> = {};
  * Container for displaying product info
  * @category Containers
  * @component
+ * @example
+ *
+ * const category = "PERFUME"
+ * const title = "Gabrielle Essence Eau De Parfum"
+ * const description = "A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL."
+ * const price = 169.99
+ * const discountPrice = 149.99
+ * const productImageUrl = "https://cdn.pixabay.com/photo/2019/04/06/19/22/glass-4108085__340.jpg"
+ *
+ * return (
+ *   <ProductCard
+ *    category={category}
+ *    title={title}
+ *    description={description}
+ *    price={price}
+ *    discountPrice={discountPrice}
+ *    productImageUrl={productImageUrl}
+ *  />
+ * )
+ *
  */
 const ProductCard: React.FC<ProductCardProps> = ({
-  productUrl,
+  productImageUrl,
   title,
   category,
   description,
@@ -74,7 +95,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
       >
         <img
           style={{ width: "100%", height: "100%", objectFit: "cover" }}
-          src={productUrl}
+          src={productImageUrl}
           alt={title}
         />
       </Box>
