@@ -1,12 +1,11 @@
-import { create } from "@storybook/theming";
-import { themes } from "@storybook/theming";
+import { create, themes } from "@storybook/theming";
 
 import logo from "../public/logo.png";
 
 export default create({
   ...themes.dark,
   brandTitle: "Baxhen",
-  brandUrl: "https://classy-narwhal-e82e98.netlify.app/",
+  brandUrl: "https://baxhen.io",
   brandImage: logo,
   brandTarget: "_self",
 });
