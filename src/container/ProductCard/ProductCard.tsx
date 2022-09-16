@@ -47,9 +47,11 @@ export interface ProductCardProps {
 }
 
 //** Default Props */
+
+export const productImageUrl =
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png";
 const defaultProps: Partial<ProductCardProps> = {
-  productImageUrl:
-    "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png",
+  productImageUrl,
 };
 
 /**
@@ -102,26 +104,42 @@ const ProductCard: React.FC<ProductCardProps> = ({
         flex={{ mobile: "unset", tablet: 1 }}
       >
         <img
+          data-testid="image"
           style={{ width: "100%", height: "100%", objectFit: "cover" }}
           src={productImageUrl}
           alt={title}
         />
       </Box>
       <Stack flex={1} bgcolor="common.white" padding="24px" spacing={3}>
-        <Typography variant="overline">{category}</Typography>
-        <Typography variant="display">{title}</Typography>
-        <Typography variant="body">{description}</Typography>
+        <Typography data-testid="category" variant="overline">
+          {category}
+        </Typography>
+        <Typography data-testid="title" variant="display">
+          {title}
+        </Typography>
+        <Typography data-testid="description" variant="body">
+          {description}
+        </Typography>
 
         <Stack direction="row" spacing="19px">
-          <Typography variant="display" color="primary.main">
+          <Typography
+            data-testid="price"
+            variant="display"
+            color="primary.main"
+          >
             ${price}
           </Typography>
-          <Typography variant="body" component="del">
+          <Typography data-testid="full-price" variant="body" component="del">
             ${fullPrice}
           </Typography>
         </Stack>
 
-        <Button onClick={onClick} variant="contained" startIcon={<CartIcon />}>
+        <Button
+          onClick={onClick}
+          data-testid="btn"
+          variant="contained"
+          startIcon={<CartIcon />}
+        >
           Add to Cart
         </Button>
       </Stack>

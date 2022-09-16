@@ -33,8 +33,8 @@ const Template: ComponentStory<typeof CartIcon> = (args) => (
 export const Default = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Default.args = {};
-export const DarkIcon = Template.bind({});
+export const CustomColorIcon = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
-DarkIcon.args = {
-  fill: "black",
+CustomColorIcon.args = {
+  fill: "pink",
 };

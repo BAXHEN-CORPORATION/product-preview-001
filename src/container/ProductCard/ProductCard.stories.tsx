@@ -48,9 +48,9 @@ const Template: ComponentStory<typeof ProductCard> = (args) => (
   </Stack>
 );
 
-export const Default = Template.bind({});
+export const DefaultProductCard = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
-Default.args = {
+DefaultProductCard.args = {
   title: "Gabrielle Essence Eau De Parfum",
   category: "PERFUME",
   description:
@@ -59,9 +59,9 @@ Default.args = {
   price: 149.99,
   productImageUrl: img,
 };
-export const NoImage = Template.bind({});
+export const NoImageProductCard = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
-NoImage.args = {
+NoImageProductCard.args = {
   title: "Gabrielle Essence Eau De Parfum",
   category: "PERFUME",
   description:
