@@ -1,7 +1,10 @@
 {
   "name": "product-preview-001",
   "version": "0.1.0",
-  "homepage": "https://baxhen-corporation.github.io/product-preview-001",
+  "repository": {
+    "url": "https://github.com/BAXHEN-CORPORATION/product-preview-001",
+    "docs": "https://baxhen-corporation.github.io/product-preview-001"
+  },
   "dependencies": {
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
