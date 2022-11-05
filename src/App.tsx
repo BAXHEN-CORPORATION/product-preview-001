@@ -4,6 +4,7 @@ import ProductCard from "./container/ProductCard";
 import Stack from "@mui/material/Stack";
 
 import productImg from "./assets/product_image.png";
+import Backlinks from "./components/Backlinks";
 
 export default function App() {
   return (
@@ -22,6 +23,9 @@ export default function App() {
         fullPrice={169.99}
         price={149.99}
         productImageUrl={productImg}
+      />
+      <Backlinks
+        links={["https://leonardo.baxhen.com", "https://clock-app.baxhen.com/"]}
       />
     </Stack>
   );
